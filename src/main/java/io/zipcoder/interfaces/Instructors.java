@@ -3,7 +3,7 @@ package io.zipcoder.interfaces;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Instructors {
+public class Instructors extends People{
     List<Instructor> instructorList;
     private final static Instructors Instance = new Instructors();
 
@@ -18,6 +18,15 @@ public class Instructors {
         }
     }
 
+    public Person getById(long id) {
+        Person returnPerson = null;
+        for (Person person : instructorList) {
+            if (person.getId() == id){
+                returnPerson = person;
+            }
+        }
+        return returnPerson;
+    }
     public Integer getSize() {
         return instructorList.size();
     }
