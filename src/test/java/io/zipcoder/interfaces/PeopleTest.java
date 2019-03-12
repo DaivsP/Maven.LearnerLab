@@ -12,7 +12,7 @@ public class PeopleTest {
     @Test
     public void testAdd(){
         //Given
-        People people = new People(new ArrayList<Person>());
+        People people = new People();
 
         //When
         people.add(new Person(10));
@@ -26,7 +26,7 @@ public class PeopleTest {
     @Test
     public void testRemove(){
         //Given
-        People people = new People(new ArrayList<Person>());
+        People people = new People();
         Person person = new Person(10);
 
         //When
@@ -45,7 +45,7 @@ public class PeopleTest {
     @Test
     public void testRemoveById(){
         //Given
-        People people = new People(new ArrayList<Person>());
+        People people = new People();
         Person person = new Person(10);
 
         //When
@@ -64,7 +64,7 @@ public class PeopleTest {
     @Test
     public void testFindById(){
         //Given
-        People people = new People(new ArrayList<Person>());
+        People people = new People();
         Person person1 = new Person(20);
         Person person2 = new Person(21);
         people.add(person1);

@@ -1,12 +1,13 @@
 package io.zipcoder.interfaces;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class People {
-    ArrayList<Person> personList;
+    List<Person> personList;
 
-    public People(ArrayList<Person> personList){
-        this.personList = personList;
+    public People(){
+        this.personList = new ArrayList<Person>();
     }
 
     public void add(Person person) {
