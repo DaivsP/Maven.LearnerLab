@@ -9,7 +9,7 @@ class Students extends People{
 
     private Students() {
         studentsList = new ArrayList<Student>();
-        for (Long i = 0L; i < 40; i++) {
+        for (Long i = 1L; i <= 40; i++) {
             studentsList.add(new Student(i));
         }
     }
