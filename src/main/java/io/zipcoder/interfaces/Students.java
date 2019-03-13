@@ -21,8 +21,9 @@ class Students extends People<Student>{
     public Student getById(long id) {
         Student returnPerson = null;
         for (Student student : studentsList) {
-            if (student.getId() == id){
+            if (student.getId().equals(id)){
                 returnPerson = student;
+                break;
             }
         }
         return returnPerson;

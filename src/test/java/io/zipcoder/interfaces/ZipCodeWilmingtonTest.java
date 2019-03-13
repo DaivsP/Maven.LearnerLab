@@ -14,7 +14,7 @@ public class ZipCodeWilmingtonTest {
 
         double actual = zipCodeWilmington.students.studentsList.get(0).getTotalStudyTime();
 
-        double expected = 1;
+        double expected = 12;
         Assert.assertEquals(expected, actual, 1);
     }
 
@@ -25,7 +25,18 @@ public class ZipCodeWilmingtonTest {
 
         double actual = zipCodeWilmington.students.studentsList.get(0).getTotalStudyTime();
 
-        double expected = 1;
+        double expected = 12;
+        Assert.assertEquals(expected, actual, 1);
+    }
+
+    @Test
+    public void hostLecture2(){
+        ZipCodeWilmington zipCodeWilmington = ZipCodeWilmington.getInstance();
+        zipCodeWilmington.hostLecture(Educator.DOLIO, 40);
+
+        double actual = zipCodeWilmington.students.studentsList.get(0).getTotalStudyTime();
+
+        double expected = 12;
         Assert.assertEquals(expected, actual, 1);
     }
 }

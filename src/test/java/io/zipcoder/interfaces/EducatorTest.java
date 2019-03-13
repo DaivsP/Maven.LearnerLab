@@ -22,6 +22,14 @@ public class EducatorTest {
 
     @Test
     public void lectureTest() {
+        Educator educator = Educator.DOLIO;
+        educator.lecture(Students.getInstance().studentsList.toArray(new Learner[0]), 40);
+
+        double actual = Students.getInstance().getById(1).getTotalStudyTime();
+
+        double expected = 1;
+
+        Assert.assertEquals(expected, actual, 1);
     }
 
     @Test

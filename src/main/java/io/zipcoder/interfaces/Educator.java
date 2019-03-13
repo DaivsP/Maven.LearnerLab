@@ -13,7 +13,7 @@ public enum Educator implements Teacher {
 
     Educator() {
         this.instructor = new Instructor(ordinal()) {
-            private Integer numberOfHoursWorked;
+            private Integer numberOfHoursWorked = 0;
 
             @Override
             public void teach(Learner learner, double numberOfHours) {
