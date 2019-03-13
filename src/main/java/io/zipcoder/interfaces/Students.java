@@ -18,6 +18,16 @@ class Students extends People<Student>{
         return new Student[0];
     }
 
+    public Student getById(long id) {
+        Student returnPerson = null;
+        for (Student student : studentsList) {
+            if (student.getId() == id){
+                returnPerson = student;
+            }
+        }
+        return returnPerson;
+    }
+
     public static Students getInstance() {
         return Instance;
     }
