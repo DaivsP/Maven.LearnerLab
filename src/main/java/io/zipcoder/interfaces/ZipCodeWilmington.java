@@ -13,7 +13,7 @@ public class ZipCodeWilmington {
     }
 
     public void hostLecture(Teacher teacher, double numberOfHours){
-        teacher.lecture(students.studentsList.toArray(new Learner[0]), numberOfHours);
+        teacher.lecture(students.getArray(), numberOfHours);
     }
 
     public void hostLecture(long id, double numberOfHours){
